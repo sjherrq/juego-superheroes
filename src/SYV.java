@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 // Clase base del personaje
 class Personaje {
     String nombre;
@@ -110,7 +111,7 @@ public class SYV {
         //#endregion
 
        //#region netan
-        Villano netan = new Villano("Benjamin Netanyahu", 49, 25, 150,"                                                       \r\n" + //
+        Villano netan = new Villano("Benjamin Netanyahu", 49, 20, 150,"                                                       \r\n" + //
                         "                                                       \r\n" + //
                         "                      ..:----:...                      \r\n" + //
                         "                  .---::######::::---.                  \r\n" + //
@@ -141,6 +142,8 @@ public class SYV {
 //#endregion
 
     String vacio;
+    Random aleatorio = new Random();
+   
     SuperHero steve = new SuperHero("Steve", 25, 14, 100,"");
     SuperHero leon = new SuperHero("Leon Scott Kennedy", 40, 17, 125,"");
     SuperHero link = new SuperHero("Link el Heroe del Tiempo", 42, 30, 135,"");
@@ -155,10 +158,10 @@ public class SYV {
     int [] equi3 = {steve.resistencia, leon.resistencia, link.resistencia};
     double [] equi4 = {steve.vida_hp, leon.vida_hp, link.vida_hp};
 
+    String [] curar_item = {"manzana encantada", "hierva roja + verde", "pocion de hada"};
+    int [] curar_cantidad = {1, 1, 1};
+
     final int[] SALUD_INICIAL = {100, 125, 135};
-    // pues eso era lo que tenia yo pero con otro valor 
-    int Enemigos =3;
-    int Equipo = 3;
 
     System.out.println("SALVA A LOS NIÑOS");
     System.out.println("");
@@ -173,12 +176,12 @@ public class SYV {
 
 
 
+    int e=0;
+    int t=0;
 
-
-    while (Enemigos != 0) {
-        double daño_recibido;
-        int e=0;
-        int t=0;
+    while (e != 3) {
+        double dano_recibido;
+        System.out.println("");
         System.out.println("Ahora te enfrentas a "+enemi1[e]);
         System.out.println("");
         Thread.sleep(1500);
@@ -188,39 +191,39 @@ public class SYV {
 
         System.out.println("Controlas a "+equi1[t]);
 
-        
+        System.out.println("");
         System.out.println("escoja la habilidad");
-
+        System.out.println("");
         System.out.println("1. ATACAR");
         System.out.println("2. FORTALECER");
         System.out.println("3. CURAR");
         System.out.println("4. AUMENTAR ATAQUE");
         System.out.println("5. MOSTRAR ESTADISTICAS");
         int accion = teclado.nextInt();
-        
+        System.out.println("");
         switch (accion) {
             case 1:
                System.out.println("escojistes atacar");
                 
-                daño_recibido= equi2[t] - ((equi2[t])*enemi2[e]/100);
-                enemi4[e]=enemi4[e]-daño_recibido;
-
+                dano_recibido= equi2[t] - ((equi2[t])*enemi3[e]/100);
+                enemi4[e]=enemi4[e]-dano_recibido;
+                System.out.println("");
                 break;
             case 2:
                 System.out.println("escojistes fortalecer");
 
                 equi3[t] = equi3[t] + 10;
-
+                System.out.println("");
                 break;
             case 3:
                 System.out.println("escojistes curar");
 
                 equi4[t]=SALUD_INICIAL[t];
-
+                System.out.println("");
                 break;
             case 4:
                 System.out.println("escojistes aumentar ataque");
-
+                System.out.println("");
                 equi2[t] = equi2[t] + 20;
                 break;
             case 5:
@@ -237,9 +240,9 @@ public class SYV {
                 System.out.println("");
                 System.out.println("Nombre: "+enemi1[e]);
                 System.out.println("Fuerza: "+enemi2[e]);
-                System.out.println("Resistencia: "+enemi3[t]);
+                System.out.println("Resistencia: "+enemi3[e]);
                 System.out.println("Salud: "+enemi4[e]);
-
+                System.out.println("");
                 Thread.sleep(6000);
 
                 break;
@@ -248,12 +251,91 @@ public class SYV {
                 break;
         }
 
+        if (accion == 5){
+            System.out.println("");
+        }   else {
+                    int accion_enemigo = aleatorio.nextInt(3);
+                    switch (accion_enemigo) {
+                        case 0:
+                        //atacar
+                        int doble_dano = aleatorio.nextInt(11);
+                        if (doble_dano>=7){
+                            dano_recibido= enemi2[e] - ((enemi2[e])*equi3[t]/100.0);
+                            
+                            equi4[t]= equi4[t]-(2*dano_recibido);
+                            System.out.println("El enemigo te ataca con doble daño");
+                        } else {
+                            dano_recibido= enemi2[e] - ((enemi2[e])*equi3[t]/100.0);
+                            equi4[t]= equi4[t]-dano_recibido;
+                            System.out.println("El enemigo te ataca");
+                        }
+                
+                        break;
+
+                        case 1:
+                        //atacar
+                        doble_dano = aleatorio.nextInt(11);
+                        if (doble_dano>=7){
+                            dano_recibido= enemi2[e] - ((enemi2[e])*equi3[t]/100.0);
+                            
+                            equi4[t]= equi4[t]-(2*dano_recibido);
+                            System.out.println("El enemigo te ataca con doble daño");
+                        } else {
+                            dano_recibido= enemi2[e] - ((enemi2[e])*equi3[t]/100.0);
+                            equi4[t]= equi4[t]-dano_recibido;
+                            System.out.println("El enemigo te ataca");
+                        }
+                
+                        break;
+                        case 2:
+                            //endurecer
+                            enemi3[e]= enemi3[e]+ 5;
+                            System.out.println("El enemigo se fortalece");
+                            break;
+                        default:
+                            System.out.println("Por escoger un numero que no es, pierdes un turno");
+                            break;
+                    }
+
+        }
 
 
 
+        System.out.println("");
+       
+      
+       if (equi4[t] <= 0) {
+        System.out.println("");
+            System.out.println(equi1[t] + " ha sido derrotado...");
+            t++;
 
+            if (t >= equi1.length) {
+                System.out.println("");
+                System.out.println("LOS NIÑOS NO HAN SIDO SALVADOS...");
+                System.out.println("");
+                System.out.println("");  
+                break;
+            }
+
+        System.out.println("");
+        System.out.println("Ahora controlas a " + equi1[t]);
+}
+        
+    
     }        
 
+
+
+    
+
+
+
+
+
+
+
     teclado.close();
+
     }
+
 }
