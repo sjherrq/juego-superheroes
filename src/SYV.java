@@ -1,5 +1,5 @@
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 // Clase base del personaje
 class Personaje {
     String nombre;
@@ -49,7 +49,7 @@ public class SYV {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         //#region trump
-        Villano trump = new Villano("Donald Trump", 32, 4, 108,"                                                             \r\n" + //
+        Villano trump = new Villano("Donald Trump", 35, 8, 118,"                                                             \r\n" + //
                         "                                                             \r\n" + //
                         "                         ···                                 \r\n" + //
                         "                    ·#####·· ·····##····                     \r\n" + //
@@ -82,7 +82,7 @@ public class SYV {
         //#endregion
 
         //#region epstein
-        Villano epstein = new Villano("Jeffrey Epstein", 35, 20, 130,"                       .::.                            \r\n" + //
+        Villano epstein = new Villano("Jeffrey Epstein", 45, 20, 140,"                       .::.                            \r\n" + //
                         "                    :+..--:  .#*=-:                    \r\n" + //
                         "              .+%++#+-:=*-=##*+==-%*.                  \r\n" + //
                         "            --%--+*=+=-#-.==*=%#.-#*%+.                \r\n" + //
@@ -113,7 +113,7 @@ public class SYV {
         //#endregion
 
        //#region netan
-        Villano netan = new Villano("Benjamin Netanyahu", 53, 20, 150,"                     :=*##%%##*=.                      \r\n" + //
+        Villano netan = new Villano("Benjamin Netanyahu", 55, 25, 160,"                     :=*##%%##*=.                      \r\n" + //
                         "               .=%@*--#%*++==-*#*+#%#-                 \r\n" + //
                         "            =%*--=-*+=---:.:=+%@#*%=.                  \r\n" + //
                         "         -=:.  .=.    .=:.=#@*+#%%%=:.  .+%-           \r\n" + //
@@ -220,7 +220,7 @@ public class SYV {
             case 4:
                 System.out.println("escojistes aumentar ataque");
                 System.out.println("");
-                equi2[t] = equi2[t] + 20;
+                equi2[t] = equi2[t] + 10;
                 break;
             case 5:
                 System.out.println("escojistes mostrar estadisticas");
