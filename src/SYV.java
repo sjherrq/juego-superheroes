@@ -49,7 +49,7 @@ public class SYV {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         //#region trump
-        Villano trump = new Villano("Donald Trump", 32, 4, 108,"                                                             \r\n" + //
+        Villano trump = new Villano("Donald Trump", 320, 4, 108,"                                                             \r\n" + //
                         "                                                             \r\n" + //
                         "                         ···                                 \r\n" + //
                         "                    ·#####·· ·····##····                     \r\n" + //
@@ -345,18 +345,21 @@ public class SYV {
         }
         
     
-    }        
-    System.out.println("Has derrotado a todos los enemigos");
-    System.out.println("");
-    Thread.sleep(500);
-    System.out.println("");
-    Thread.sleep(500);
-    System.out.println("");
-    Thread.sleep(500);
-    System.out.println("");
-    System.out.println("--LOS NIÑOS HAN SIDO SALVADOS--");
-    System.out.println("");
-    System.out.println("");
+    }     
+    if (e>= enemi1.length){
+        System.out.println("Has derrotado a todos los enemigos");
+        System.out.println("");
+        Thread.sleep(500);
+        System.out.println("");
+        Thread.sleep(500);
+        System.out.println("");
+        Thread.sleep(500);
+        System.out.println("");
+        System.out.println("--LOS NIÑOS HAN SIDO SALVADOS--");
+        System.out.println("");
+        System.out.println("");
+    }
+
     teclado.close();
     }
 }
