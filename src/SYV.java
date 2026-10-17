@@ -49,7 +49,7 @@ public class SYV {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         //#region trump
-        Villano trump = new Villano("Donald Trump", 320, 4, 108,"                                                             \r\n" + //
+        Villano trump = new Villano("Donald Trump", 32, 4, 108,"                                                             \r\n" + //
                         "                                                             \r\n" + //
                         "                         ···                                 \r\n" + //
                         "                    ·#####·· ·····##····                     \r\n" + //
