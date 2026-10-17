@@ -49,34 +49,36 @@ public class SYV {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         //#region trump
-        Villano trump = new Villano("Donald Trump", 32, 4, 108,"                                                       \r\n" + //
-                        "                                                       \r\n" + //
-                        "                                                       \r\n" + //
-                        "                  ··············####···                \r\n" + //
-                        "             ···##··        ···  ······#·              \r\n" + //
-                        "            ··   ·######··#·  ·#·  ·#··#·#·            \r\n" + //
-                        "          ·##·     ··####···#· ··· ··######·           \r\n" + //
-                        "           ·#·      ··######·###··· ·######·#·         \r\n" + //
-                        "          ·#·   ···· ···##############·###····         \r\n" + //
-                        "          ··  ···#··##··##########·####·· · #·         \r\n" + //
-                        "         ··   ·##·      ···####···       ##···         \r\n" + //
-                        "         ··  ·###·                      ·###·#         \r\n" + //
-                        "        ··  ·###·                        ·#····        \r\n" + //
-                        "        ·#······   ·#######··#···#####·· ·#· ··        \r\n" + //
-                        "         ·· ··#·  ·##·· ·····#········#· ·#  ··        \r\n" + //
-                        "          ··#···   ········   ·········· ····#         \r\n" + //
-                        "          ····#·     ···#·    ·· ·#···   ·····         \r\n" + //
-                        "           ·····  ·        ·  ···      · ····          \r\n" + //
-                        "            ····   ··    ···  ····   ··  ··#           \r\n" + //
-                        "              ··   ··   ·····#····   ··  #·            \r\n" + //
-                        "               #·      ··         ··    ·#             \r\n" + //
-                        "                #·     ····#######·    ··              \r\n" + //
-                        "                 ··       ·#####·      #·              \r\n" + //
-                        "                  ··                 ··                \r\n" + //
-                        "                    ··#·         ·····                 \r\n" + //
-                        "                        ··········                     \r\n" + //
-                        "                                                       \r\n" + //
-                        "                                                       ");
+        Villano trump = new Villano("Donald Trump", 32, 4, 108,"                                                             \r\n" + //
+                        "                                                             \r\n" + //
+                        "                         ···                                 \r\n" + //
+                        "                    ·#####·· ·····##····                     \r\n" + //
+                        "               ·##·#######·             ·#                   \r\n" + //
+                        "            ·#·##################···                         \r\n" + //
+                        "          ·###·   ·##############· ··####·####·##·           \r\n" + //
+                        "          ·· ·     ·###############·····#####··##·           \r\n" + //
+                        "          #·  ·    ·##########################··             \r\n" + //
+                        "          #·  ··    ····#########···######·   ·#·            \r\n" + //
+                        "         ·#··   ·      ········##· ··#####·    ##            \r\n" + //
+                        "         ··#·                         ###··    ##·           \r\n" + //
+                        "         ·###                        ######· ·· #·           \r\n" + //
+                        "          ##·                     ·####·###· ·· ··           \r\n" + //
+                        "         ·##··        ··      ···  ·#######· ·· ··           \r\n" + //
+                        "          #·        ·########·###·##·  ···#· #·              \r\n" + //
+                        "          ··   ·#   · ···       ·    ···#·····    ·          \r\n" + //
+                        "           #   ·#·   ·##### ·  ###··##·######·   ··          \r\n" + //
+                        "           ·   ·##·        ·   ·######··#####·  ##           \r\n" + //
+                        "            ··· ·##    ·####   ·############    #·           \r\n" + //
+                        "             #   ##     ####·  ·####··#####·    ·            \r\n" + //
+                        "              ·· #·       ·    ####·#· ####·                 \r\n" + //
+                        "                 ··         ·     ·#### ·###·                \r\n" + //
+                        "                  ·       ·#·   ··######·####                \r\n" + //
+                        "                   ·     ··       ···#· ####·                \r\n" + //
+                        "                    ·    ·    ····  ·###··#·                 \r\n" + //
+                        "                     ·         ·#########·                   \r\n" + //
+                        "                            ·## ·######·                     \r\n" + //
+                        "                                                             \r\n" + //
+                        "                                                             \r\n ");
         //#endregion
 
         //#region epstein
@@ -111,34 +113,42 @@ public class SYV {
         //#endregion
 
        //#region netan
-        Villano netan = new Villano("Benjamin Netanyahu", 49, 20, 150,"                                                       \r\n" + //
-                        "                                                       \r\n" + //
-                        "                      ..:----:...                      \r\n" + //
-                        "                  .---::######::::---.                  \r\n" + //
-                        "               .--.::.:##:.........-=:--.              \r\n" + //
-                        "             .--.:.-:  :=+=:.     :=:--.--             \r\n" + //
-                        "            .=..:.:--.              -:::.-:            \r\n" + //
-                        "           .+.::=-                   -:.. +.           \r\n" + //
-                        "          -- .--:                    .= .. +           \r\n" + //
-                        "         .- ...:        .             :-   *:.         \r\n" + //
-                        "         :- . ::    ......:#::.        :: =.:--        \r\n" + //
-                        "         .=.# .:      ..        .+##*=  -:=-:.-.       \r\n" + //
-                        "          =.   :.   ..:.      -#+:..    ::#..=-        \r\n" + //
-                        "          :+:. ::  +*+=+++=.  -.=+.-+    :+-.=-        \r\n" + //
-                        "         --::--:-. .:+-.*- :. - :.        ==--:        \r\n" + //
-                        "          =.- -==.    .  - .. -           .= -:        \r\n" + //
-                        "           =:: :=.    ..   .:              +--         \r\n" + //
-                        "            --::+:        .:.   ::-.       -:          \r\n" + //
-                        "             :=.:-       :---. ::: .-      :-          \r\n" + //
-                        "               -+*      .:           .:    +.          \r\n" + //
-                        "                 :=     :  ..:.:-----.    --           \r\n" + //
-                        "                  :=     .:--..::::.     -:            \r\n" + //
-                        "                   .-:        .:-:.     -:             \r\n" + //
-                        "                     :=.              :=.              \r\n" + //
-                        "                       .--:         --.                \r\n" + //
-                        "                          .:=====-::                   \r\n" + //
-                        "                                                       \r\n" + //
-                        "                                                       ");
+        Villano netan = new Villano("Benjamin Netanyahu", 49, 20, 150,"                     :=*##%%##*=.                      \r\n" + //
+                        "               .=%@*--#%*++==-*#*+#%#-                 \r\n" + //
+                        "            =%*--=-*+=---:.:=+%@#*%=.                  \r\n" + //
+                        "         -=:.  .=.    .=:.=#@*+#%%%=:.  .+%-           \r\n" + //
+                        "      .-:.  :--   .==+=+=.-=+#%@@@#=:..  .+@%:         \r\n" + //
+                        "     +#. .:.  :=.:.=%=-#+-:=#%#+***:.   .=+@@%=        \r\n" + //
+                        "    *=+-::.--:===. ...-.   ..           =@#%@*+..      \r\n" + //
+                        "  .#@**--**=*:..:.   ..-#=.             .##%#%++-      \r\n" + //
+                        "  +@%%#%#:  :-     .                     .-.+:-.#-     \r\n" + //
+                        " .*%#%@*:...                                ..  -#.    \r\n" + //
+                        " :##-#@-:.                                  .   .#:    \r\n" + //
+                        " .-..=#*-                                   .--:.#:    \r\n" + //
+                        "  : .=%+:                         .-:        .=.=*.:%#.\r\n" + //
+                        "  ::+=*#-                 .:...               .:**+*..=\r\n" + //
+                        "  :+..+++.        ..          :+:   .         :*%: ...=\r\n" + //
+                        "   :  :#+.           .:::..      .   -*#-     :@#. :=--\r\n" + //
+                        "%@@+   :-.                         +#:  .:-   .%+   :+.\r\n" + //
+                        "=   .  .+.     .##%@@%=: .      =#.            #%. .:= \r\n" + //
+                        "--..  :%#.   .=:     .:--   :       .::-+.     .*.: =: \r\n" + //
+                        " -+.   +@=       :=:.     :%+   ..:%*-##-++    :-.#%#. \r\n" + //
+                        "  -:   *@+      :=*#*+==-  .%=           ==    +-  -+  \r\n" + //
+                        "  .*:+=.=:    :%=          .@@.      .:.=.     ..*#=   \r\n" + //
+                        "    +@%*-*.     .+:-.       %@:                .+      \r\n" + //
+                        "    .*%=:.-                 +@-                .*.     \r\n" + //
+                        "      .+*.=              :.+@@@-  ..           .*.     \r\n" + //
+                        "          +:           .=.-%@@@@-  :*          .=      \r\n" + //
+                        "          :=          =-    *%#=     .-        ..      \r\n" + //
+                        "           -.       :=                 =:      .-      \r\n" + //
+                        "                    -           *             :@=      \r\n" + //
+                        "            -*          -=:..*%-. ..-..      .*@-      \r\n" + //
+                        "            :%*.         .+=@%*@#=-         .#@%.      \r\n" + //
+                        "            .#@%:                          #@@@+       \r\n" + //
+                        "             .%@@@=        -*@@@@=:      .%@@@*        \r\n" + //
+                        "              .%@@@@*.                 .#@@@@%.        \r\n" + //
+                        "               .@@@@@@%-             =%@@@@@@+         \r\n" + //
+                        "                +@@@@@@@@@%-+=-+-#%@@@@@@@@@#          ");
 //#endregion
 
     String vacio;
@@ -146,7 +156,7 @@ public class SYV {
    
     SuperHero steve = new SuperHero("Steve", 25, 14, 100,"");
     SuperHero leon = new SuperHero("Leon Scott Kennedy", 40, 17, 125,"");
-    SuperHero link = new SuperHero("Link el Heroe del Tiempo", 42, 30, 135,"");
+    SuperHero link = new SuperHero("Link el Heroe del Tiempo", 42, 25, 135,"");
     String [] enemi1 = {trump.nombre, epstein.nombre, netan.nombre};
     int [] enemi2 = {trump.fuerza, epstein.fuerza, netan.fuerza};
     int [] enemi3 = {trump.resistencia , epstein.resistencia , netan.resistencia };
@@ -181,16 +191,12 @@ public class SYV {
 
     while (e != 3) {
         double dano_recibido;
-        System.out.println("");
+   
         System.out.println("Ahora te enfrentas a "+enemi1[e]);
-        System.out.println("");
+   
         Thread.sleep(1500);
         System.out.println(enemi5[e]);
-        System.out.println("");
-        System.out.println("");
-
         System.out.println("Controlas a "+equi1[t]);
-
         System.out.println("");
         System.out.println("escoja la habilidad");
         System.out.println("");
@@ -216,10 +222,16 @@ public class SYV {
                 System.out.println("");
                 break;
             case 3:
-                System.out.println("escojistes curar");
+                if (curar_cantidad[t]==1) {
+                    System.out.println("escojistes curar");
+                    System.out.println("Has usado: "+curar_item[t]);
+                    equi4[t]=SALUD_INICIAL[t];
+                    System.out.println("");
+                } else {
+                    System.out.println("No tenias nada para curarte, le regalas el turno al enemigo");
+                }
 
-                equi4[t]=SALUD_INICIAL[t];
-                System.out.println("");
+               
                 break;
             case 4:
                 System.out.println("escojistes aumentar ataque");
@@ -247,9 +259,21 @@ public class SYV {
 
                 break;
             default:
-                System.out.println("valor no valido");
+                System.out.println("Por escoger un numero que no es, pierdes un turno");
                 break;
         }
+        if (enemi4[e] <= 0) {
+            System.out.println("Has derrotado a "+enemi1[e]);
+            e=e+1;
+            if (e >= enemi1.length) {
+                break;
+            }
+
+        }
+
+
+
+
 
         if (accion == 5){
             System.out.println("");
@@ -284,7 +308,7 @@ public class SYV {
                             dano_recibido= enemi2[e] - ((enemi2[e])*equi3[t]/100.0);
                             equi4[t]= equi4[t]-dano_recibido;
                             System.out.println("El enemigo te ataca");
-                        }
+                            }
                 
                         break;
                         case 2:
@@ -293,8 +317,8 @@ public class SYV {
                             System.out.println("El enemigo se fortalece");
                             break;
                         default:
-                            System.out.println("Por escoger un numero que no es, pierdes un turno");
-                            break;
+                           
+                        break;
                     }
 
         }
@@ -316,26 +340,23 @@ public class SYV {
                 System.out.println("");  
                 break;
             }
-
         System.out.println("");
         System.out.println("Ahora controlas a " + equi1[t]);
-}
+        }
         
     
     }        
-
-
-
-    
-
-
-
-
-
-
-
+    System.out.println("Has derrotado a todos los enemigos");
+    System.out.println("");
+    Thread.sleep(500);
+    System.out.println("");
+    Thread.sleep(500);
+    System.out.println("");
+    Thread.sleep(500);
+    System.out.println("");
+    System.out.println("--LOS NIÑOS HAN SIDO SALVADOS--");
+    System.out.println("");
+    System.out.println("");
     teclado.close();
-
     }
-
 }
